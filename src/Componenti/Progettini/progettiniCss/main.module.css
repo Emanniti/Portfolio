@@ -1,0 +1,19 @@
+.bodyDisney{
+    background-color: #1a1d29 !important; 
+}
+
+.rigaAppbar{
+    background-color: #30333e !important;
+}
+
+.immagine{
+    height: 70px;
+}
+
+.footerDisneyPlusLoginScreen{
+    background-color: #0e0b14;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

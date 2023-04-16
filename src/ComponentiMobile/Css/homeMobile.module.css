@@ -1,0 +1,76 @@
+.appBar{
+    background-color: black !important;
+}
+  .cardPersonale {
+    background-color: #0d0d0d !important;
+    border-radius: 2rem !important;
+    margin-top: -60px;
+}
+.immagine {
+    border-radius: 2rem;
+}
+
+.knowledgesCard {
+    margin-top: -20px;
+    background-color: #1c1c1c !important;
+    border-radius: 0.5rem !important;
+    text-align: center !important;
+}
+
+.iconeLink {
+    height: 60px;
+    background-color: #1c1c1c !important;
+    border-radius: 1rem !important;
+}
+
+.iconeLink:hover {
+    background: rgb(238, 96, 96);
+    background: -moz-linear-gradient(305deg, rgba(238, 96, 96, 1) 0%, rgba(160, 68, 68, 1) 39%, rgba(94, 44, 44, 1) 72%);
+    background: -webkit-linear-gradient(305deg, rgba(238, 96, 96, 1) 0%, rgba(160, 68, 68, 1) 39%, rgba(94, 44, 44, 1) 72%);
+    background: linear-gradient(305deg, rgba(238, 96, 96, 1) 0%, rgba(160, 68, 68, 1) 39%, rgba(94, 44, 44, 1) 72%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ee6060", endColorstr="#5e2c2c", GradientType=1);
+}
+
+.iconeAreaPersonaleLocation {
+    margin-left: -10px;
+    background-color: #111111 !important;
+    height: 45px;
+    width: 50px;
+    border-radius: 1rem !important;
+    color: rgb(11, 240, 218);
+}
+
+.robotoFont {
+    font-family: 'Roboto Slab', serif;
+    ;
+}
+
+.iconeAreaPersonaleMail {
+    margin-left: -10px;
+    background-color: #111111 !important;
+    height: 45px;
+    width: 50px;
+    border-radius: 1rem !important;
+    color: #df2773;
+}
+
+.iconeAreaPersonaleBirthday {
+    margin-left: -10px;
+    background-color: #111111 !important;
+    height: 45px;
+    width: 50px;
+    border-radius: 1rem !important;
+    color: rgb(9, 216, 16);
+}
+
+.bottoneDownloadCv {
+    background: rgb(131,58,180);
+    background: -moz-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
+    border-radius: 2rem !important;
+    height: 50px !important;
+    width: 200px !important;
+    color: white !important;
+}

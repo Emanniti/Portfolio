@@ -1,0 +1,27 @@
+.card{
+    background-color: #0d0d0d !important;
+    border-top-left-radius: 2rem !important;
+    border-top-right-radius: 2rem !important;
+
+    max-width: 360px;
+    margin-top: 150px;
+    overflow: visible !important;
+
+}
+
+.elementFade {
+    opacity: 1;
+    animation: fade 2s linear;
+}
+
+
+@keyframes fade {
+  0% { opacity: 0 }
+  50% { opacity: 1 }
+  100% { opacity: 2 }
+}
+
+.sezioniBar{
+  background-color: #111111 !important;
+  border-radius: 2rem;
+}

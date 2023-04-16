@@ -1,0 +1,13 @@
+.cosaFaccioCard{
+    background-color: #0d0d0d !important;
+    border-top-left-radius: 2rem !important;
+    border-top-right-radius: 2rem !important;
+    border-bottom-left-radius: 2rem !important;
+    border-bottom-right-radius: 2rem !important;
+    border-width: 2px !important;
+    border-color: #212425 !important;
+    border-style: solid;
+    min-width: 350px;
+}
+
+
