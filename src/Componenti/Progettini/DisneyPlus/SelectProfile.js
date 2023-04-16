@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { AppBar, Avatar, Box, Grid, IconButton, Stack, Toolbar, Typography } from '@mui/material';
+//CSS
 import mainCss from '../progettiniCss/main.module.css'
 
 const profili = [{ urlImmagine: "", nomeProfilo: "Emanuele" }, { urlImmagine: "", nomeProfilo: "Francesca" }, { urlImmagine: "", nomeProfilo: "Ospite" }]
