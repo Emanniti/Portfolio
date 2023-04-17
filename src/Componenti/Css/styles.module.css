@@ -45,7 +45,6 @@
 
 .robotoFont {
     font-family: 'Roboto Slab', serif;
-    ;
 }
 
 
@@ -53,7 +52,7 @@
     background-color: #0d0d0d !important;
     border-radius: 2rem !important;
     position: fixed !important;
-    width: 500px;
+    width: 350px;
     margin-left: 2%;
     margin-top: -60px;
 }

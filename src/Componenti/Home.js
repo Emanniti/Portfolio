@@ -93,15 +93,15 @@ export default function Home() {
                             <Grid item >
                                 <Card className={styles.cardPersonale} style={{ overflow: 'visible' }}>
                                     <Grid spacing={4} justifyContent="center" container>
-                                        <Grid item lg={8.1}>
+                                        <Grid item lg={9}>
                                             <Box
                                                 className={styles.immagine}
                                                 component="img"
                                                 style={{ marginTop: -120 }}
                                                 src={ImmagineProfilo}
                                                 sx={{
-                                                    height: 300,
-                                                    width: 330,
+                                                    height: 250,
+                                                    width: 250,
                                                     maxHeight: { xs: 300, md: 300 },
                                                     maxWidth: { xs: 440, md: 440 },
                                                 }}
@@ -109,26 +109,26 @@ export default function Home() {
                                         </Grid>
                                     </Grid>
                                     <Grid spacing={4} justifyContent="center" container>
-                                        <Grid item lg={10}>
-                                            <span className={styles.robotoFont} style={{ color: 'white', fontSize: 40, marginLeft: 30 }}>Emanuele Manniti</span>
+                                        <Grid item lg={12}>
+                                            <span className={styles.robotoFont} style={{ color: 'white', fontSize: 30, marginLeft: 40 }}>Emanuele Manniti</span>
                                         </Grid>
                                         <Grid item lg={7}>
                                             <Grid spacing={4} justifyContent="center" container>
                                                 <Grid item lg={10}>
                                                     <Card className={styles.knowledgesCard}>
-                                                        <span style={{ fontSize: 25, color: '#a6a69e' }}>Web Developer</span>
+                                                        <span style={{ fontSize: 20, color: '#a6a69e' }}>Web Developer</span>
                                                     </Card>
                                                 </Grid>
                                             </Grid>
                                         </Grid>
                                         <Grid item lg={7} style={{ marginTop: -20 }}>
                                             <Grid spacing={1} justifyContent="center" container>
-                                                <Grid item xs={3}>
+                                                <Grid item xs={5}>
                                                     <Link href="https://www.linkedin.com/in/emanuele-manniti-338360183/">
                                                         <Button className={styles.iconeLink} variant="text"><LinkedInIcon className={styles.iconaHome} fontSize='large' /></Button>
                                                     </Link>
                                                 </Grid>
-                                                <Grid item xs={3}>
+                                                <Grid item xs={5}>
                                                     <Link href="https://github.com/Emanniti">
                                                         <Button className={styles.iconeLink} variant="text"><GitHubIcon className={styles.iconaHome} fontSize='large' /></Button>
                                                     </Link>
@@ -171,7 +171,7 @@ export default function Home() {
                                                                                 component="span"
                                                                                 variant="body2"
                                                                                 color="white"
-                                                                                style={{ fontSize: 20 }}
+                                                                                style={{ fontSize: 15 }}
                                                                             >
                                                                                 Italy Naples(NA)
                                                                             </Typography>
@@ -215,7 +215,7 @@ export default function Home() {
                                                                                 component="span"
                                                                                 variant="body2"
                                                                                 color="white"
-                                                                                style={{ fontSize: 20 }}
+                                                                                style={{ fontSize: 13 }}
                                                                             >
                                                                                 mannitiemanuele@gmail.com
                                                                             </Typography>
@@ -259,7 +259,7 @@ export default function Home() {
                                                                                 component="span"
                                                                                 variant="body2"
                                                                                 color="white"
-                                                                                style={{ fontSize: 20 }}
+                                                                                style={{ fontSize: 15 }}
                                                                             >
                                                                                 Italy Naples(NA)
                                                                             </Typography>
@@ -272,7 +272,7 @@ export default function Home() {
                                                 </List>
                                             </Card>
                                         </Grid>
-                                        <Grid item lg={5} style={{ marginBottom: 20 }}>
+                                        <Grid item lg={7} style={{ marginBottom: 20 }}>
                                             <a style={{ textDecoration: 'inherit' }} href={ImmagineProfilo} download><Button className={styles.bottoneDownloadCv} variant="text"><span style={{ fontWeight: 'bold' }}>DOWNLOAD CV</span></Button></a>
                                         </Grid>
                                     </Grid>

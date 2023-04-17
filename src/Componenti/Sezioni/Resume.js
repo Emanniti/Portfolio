@@ -176,12 +176,12 @@ function Resume() {
 
                         }}
                     />
-                    <Grid container spacing={4} style={{ marginTop: -130, marginLeft: 30 }}>
-                        <Grid item lg={3.5} xs={2} >
+                    <Grid container spacing={4} style={{ marginTop: -130, marginLeft: 10 }}>
+                        <Grid item xs={5} >
                             <span className={styles.robotoFont} style={{ color: 'white', fontSize: 50 }}>Resume </span>
                         </Grid>
-                        <Grid item lg={4} xs={4}>
-                            <hr className={resume.lineaPortfolio}/>
+                        <Grid item xs={4}>
+                            <hr className={resume.lineaPortfolio} />
                         </Grid>
                     </Grid>
                     <Grid container justifyContent="flex-end" style={{ marginTop: 0.1 }} spacing={5} >

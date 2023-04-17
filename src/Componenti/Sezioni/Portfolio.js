@@ -42,7 +42,7 @@ function Portfolio() {
                             <Grid item xs={6}>
                                 <span className={styles.robotoFont} style={{ color: 'white', fontSize: 18, paddingLeft: 200 }}>Preview: <a style={{ color: 'white' }} rel="noreferrer" href="https://crowdmoovi.com/" target="_blank">crowdmoovi.com</a></span>
                             </Grid>
-                            <Grid item xs={12} style={{ marginTop: 20 , paddingLeft: 30}}>
+                            <Grid item xs={12} style={{ marginTop: 20, paddingLeft: 30 }}>
                                 <span className={styles.robotoFont} style={{ color: 'white', fontSize: 18 }}>CrowdMoovi ed il suo Marketplace NFT permettono agli artisti nel
                                     mondo del cinema come registi, sceneggiatori, attori e molti altri di
                                     finanziare i propri prodotti cinematografici tramite la vendita di
@@ -69,12 +69,12 @@ function Portfolio() {
                     </DialogContent>
                 </Dialog>
                 <Grid container>
-                    <Grid container justifyContent='flex-start' style={{ marginLeft: 50 }}>
-                        <Grid item lg={3.5} xs={6} >
+                    <Grid container justifyContent='flex-start' style={{ marginLeft: 20 }}>
+                        <Grid item xs={5} >
                             <span className={styles.robotoFont} style={{ color: 'white', fontSize: 50 }}>Portfolio </span>
                         </Grid>
-                        <Grid item lg={4} xs={4}>
-                            <hr className={resume.lineaPortfolio}/>
+                        <Grid item xs={4}>
+                            <hr className={resume.lineaPortfolio} />
                         </Grid>
                     </Grid>
                     <Grid contaier justifyContent="left" spacing={2} style={{ marginLeft: 30 }}>
