@@ -64,7 +64,7 @@ export default function Home() {
         <div className={styles.bodyHome}>
             <Grid container>
                 <Grid justifyContent="center" container>
-                    <Grid item style={{ marginTop: 70, marginLeft: -180 }} xs={3}>
+                    <Grid item style={{ marginTop: 70, marginLeft: -150 }} xs={3}>
                         <AppBar className={styles.appBar} position="relative">
                             <Toolbar>
                                 <Grid style={{ textAlign: 'center' }} container>
@@ -100,7 +100,7 @@ export default function Home() {
                                                 style={{ marginTop: -120 }}
                                                 src={ImmagineProfilo}
                                                 sx={{
-                                                    height: 250,
+                                                    height: 220,
                                                     width: 250,
                                                     maxHeight: { xs: 300, md: 300 },
                                                     maxWidth: { xs: 440, md: 440 },
@@ -108,14 +108,14 @@ export default function Home() {
                                             />
                                         </Grid>
                                     </Grid>
-                                    <Grid spacing={4} justifyContent="center" container>
+                                    <Grid spacing={3.5} justifyContent="center" container>
                                         <Grid item lg={12}>
                                             <span className={styles.robotoFont} style={{ color: 'white', fontSize: 30, marginLeft: 40 }}>Emanuele Manniti</span>
                                         </Grid>
                                         <Grid item lg={7}>
                                             <Grid spacing={4} justifyContent="center" container>
                                                 <Grid item lg={10}>
-                                                    <Card className={styles.knowledgesCard}>
+                                                    <Card className={styles.knowledgesCard1}>
                                                         <span style={{ fontSize: 20, color: '#a6a69e' }}>Web Developer</span>
                                                     </Card>
                                                 </Grid>
@@ -135,12 +135,12 @@ export default function Home() {
                                                 </Grid>
                                             </Grid>
                                         </Grid>
-                                        <Grid item lg={10}>
-                                            <Card className={styles.knowledgesCard}>
-                                                <List sx={{ width: '100%', maxWidth: 360 }}>
+                                        <Grid item lg={9}>
+                                            <Card className={styles.knowledgesCard2}>
+                                                <List sx={{ width: '100%', maxWidth: 360, height:200 }}>
                                                     <ListItem alignItems="center">
                                                         <ListItemAvatar>
-                                                            <LocationOnIcon className={styles.iconeAreaPersonaleLocation} fontSize='large' />
+                                                            <LocationOnIcon className={styles.iconeAreaPersonaleLocation} />
                                                         </ListItemAvatar>
                                                         <Grid container>
                                                             <Grid lg={12} item>
@@ -153,7 +153,7 @@ export default function Home() {
                                                                                 component="span"
                                                                                 variant="body2"
                                                                                 color="#a6a69e"
-                                                                                style={{ fontSize: 15 }}
+                                                                                style={{ fontSize: 13 }}
                                                                             >
                                                                                 Location
                                                                             </Typography>
@@ -167,11 +167,11 @@ export default function Home() {
                                                                     secondary={
                                                                         <React.Fragment>
                                                                             <Typography
-                                                                                sx={{ display: 'inline' }}
+                                                                                s
                                                                                 component="span"
                                                                                 variant="body2"
                                                                                 color="white"
-                                                                                style={{ fontSize: 15 }}
+                                                                                style={{ fontSize: 13 }}
                                                                             >
                                                                                 Italy Naples(NA)
                                                                             </Typography>
@@ -184,7 +184,7 @@ export default function Home() {
                                                     <Divider variant="inset" style={{ background: '#a6a69e' }} component="li" />
                                                     <ListItem alignItems="center">
                                                         <ListItemAvatar>
-                                                            <EmailIcon className={styles.iconeAreaPersonaleMail} fontSize='large' />
+                                                            <EmailIcon className={styles.iconeAreaPersonaleMail} />
                                                         </ListItemAvatar>
                                                         <Grid container>
                                                             <Grid lg={12} item>
@@ -197,7 +197,7 @@ export default function Home() {
                                                                                 component="span"
                                                                                 variant="body2"
                                                                                 color="#a6a69e"
-                                                                                style={{ fontSize: 15 }}
+                                                                                style={{ fontSize: 13 }}
                                                                             >
                                                                                 Email
                                                                             </Typography>
@@ -228,7 +228,7 @@ export default function Home() {
                                                     <Divider variant="inset" style={{ background: '#a6a69e' }} component="li" />
                                                     <ListItem alignItems="center">
                                                         <ListItemAvatar>
-                                                            <CalendarMonthIcon className={styles.iconeAreaPersonaleBirthday} fontSize='large' />
+                                                            <CalendarMonthIcon className={styles.iconeAreaPersonaleBirthday}/>
                                                         </ListItemAvatar>
                                                         <Grid container>
                                                             <Grid lg={12} item>
@@ -241,7 +241,7 @@ export default function Home() {
                                                                                 component="span"
                                                                                 variant="body2"
                                                                                 color="#a6a69e"
-                                                                                style={{ fontSize: 15 }}
+                                                                                style={{ fontSize: 13 }}
                                                                             >
                                                                                 Birthday
                                                                             </Typography>
@@ -272,7 +272,7 @@ export default function Home() {
                                                 </List>
                                             </Card>
                                         </Grid>
-                                        <Grid item lg={7} style={{ marginBottom: 20 }}>
+                                        <Grid item xs={7} >
                                             <a style={{ textDecoration: 'inherit' }} href={ImmagineProfilo} download><Button className={styles.bottoneDownloadCv} variant="text"><span style={{ fontWeight: 'bold' }}>DOWNLOAD CV</span></Button></a>
                                         </Grid>
                                     </Grid>
@@ -280,7 +280,7 @@ export default function Home() {
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Grid item sx={6} lg={6} style={{ marginTop: 40 }}>
+                    <Grid item sx={6} lg={6} style={{ marginTop: 20 }}>
                         <Card className={styles.componentePrincipale}>
                             {sezione}
                         </Card>

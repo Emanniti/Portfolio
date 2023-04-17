@@ -53,6 +53,7 @@
     border-radius: 2rem !important;
     position: fixed !important;
     width: 350px;
+    height: 550px;
     margin-left: 2%;
     margin-top: -60px;
 }
@@ -61,11 +62,20 @@
     border-radius: 2rem;
 }
 
-.knowledgesCard {
-    margin-top: -20px;
+.knowledgesCard1 {
+    margin-top: -25px;
     background-color: #1c1c1c !important;
     border-radius: 0.5rem !important;
     text-align: center !important;
+}
+
+.knowledgesCard2 {
+    margin-top: -25px;
+    background-color: #1c1c1c !important;
+    border-radius: 0.5rem !important;
+    text-align: center !important;
+    height: 230px;
+    margin-top: -20px;
 }
 
 .iconeLink {
@@ -83,28 +93,25 @@
 }
 
 .iconeAreaPersonaleLocation {
-    margin-left: -10px;
     background-color: #111111 !important;
-    height: 45px;
-    width: 50px;
+    height: 40px !important;
+    width: 30px !important;
     border-radius: 1rem !important;
     color: rgb(11, 240, 218);
 }
 
 .iconeAreaPersonaleMail {
-    margin-left: -10px;
     background-color: #111111 !important;
-    height: 45px;
-    width: 50px;
+    height: 40px !important;
+    width: 30px !important;
     border-radius: 1rem !important;
     color: #df2773;
 }
 
 .iconeAreaPersonaleBirthday {
-    margin-left: -10px;
     background-color: #111111 !important;
-    height: 45px;
-    width: 50px;
+    height: 40px !important;
+    width: 30px !important;
     border-radius: 1rem !important;
     color: rgb(9, 216, 16);
 }
@@ -116,7 +123,8 @@
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
     border-radius: 2rem !important;
-    height: 60px !important;
+    height: 30px !important;
     width: 200px !important;
+    margin-bottom: 100px !important;
     color: white !important;
 }
