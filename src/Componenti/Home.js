@@ -64,7 +64,7 @@ export default function Home() {
         <div className={styles.bodyHome}>
             <Grid container>
                 <Grid justifyContent="center" container>
-                    <Grid item style={{ marginTop: 70, marginLeft: -150 }} xs={3}>
+                    <Grid item style={{ marginTop: 70, marginLeft: -180 }} xs={3}>
                         <AppBar className={styles.appBar} position="relative">
                             <Toolbar>
                                 <Grid style={{ textAlign: 'center' }} container>
@@ -93,54 +93,54 @@ export default function Home() {
                             <Grid item >
                                 <Card className={styles.cardPersonale} style={{ overflow: 'visible' }}>
                                     <Grid spacing={4} justifyContent="center" container>
-                                        <Grid item lg={9}>
+                                        <Grid item lg={8.1}>
                                             <Box
                                                 className={styles.immagine}
                                                 component="img"
                                                 style={{ marginTop: -120 }}
                                                 src={ImmagineProfilo}
                                                 sx={{
-                                                    height: 220,
-                                                    width: 250,
+                                                    height: 300,
+                                                    width: 330,
                                                     maxHeight: { xs: 300, md: 300 },
                                                     maxWidth: { xs: 440, md: 440 },
                                                 }}
                                             />
                                         </Grid>
                                     </Grid>
-                                    <Grid spacing={3.5} justifyContent="center" container>
-                                        <Grid item lg={12}>
-                                            <span className={styles.robotoFont} style={{ color: 'white', fontSize: 30, marginLeft: 40 }}>Emanuele Manniti</span>
+                                    <Grid spacing={4} justifyContent="center" container>
+                                        <Grid item lg={10}>
+                                            <span className={styles.robotoFont} style={{ color: 'white', fontSize: 40, marginLeft: 30 }}>Emanuele Manniti</span>
                                         </Grid>
                                         <Grid item lg={7}>
                                             <Grid spacing={4} justifyContent="center" container>
                                                 <Grid item lg={10}>
-                                                    <Card className={styles.knowledgesCard1}>
-                                                        <span style={{ fontSize: 20, color: '#a6a69e' }}>Web Developer</span>
+                                                    <Card className={styles.knowledgesCard}>
+                                                        <span style={{ fontSize: 25, color: '#a6a69e' }}>Web Developer</span>
                                                     </Card>
                                                 </Grid>
                                             </Grid>
                                         </Grid>
                                         <Grid item lg={7} style={{ marginTop: -20 }}>
                                             <Grid spacing={1} justifyContent="center" container>
-                                                <Grid item xs={5}>
+                                                <Grid item xs={3}>
                                                     <Link href="https://www.linkedin.com/in/emanuele-manniti-338360183/">
                                                         <Button className={styles.iconeLink} variant="text"><LinkedInIcon className={styles.iconaHome} fontSize='large' /></Button>
                                                     </Link>
                                                 </Grid>
-                                                <Grid item xs={5}>
+                                                <Grid item xs={3}>
                                                     <Link href="https://github.com/Emanniti">
                                                         <Button className={styles.iconeLink} variant="text"><GitHubIcon className={styles.iconaHome} fontSize='large' /></Button>
                                                     </Link>
                                                 </Grid>
                                             </Grid>
                                         </Grid>
-                                        <Grid item lg={9}>
-                                            <Card className={styles.knowledgesCard2}>
-                                                <List sx={{ width: '100%', maxWidth: 360, height:200 }}>
+                                        <Grid item lg={10}>
+                                            <Card className={styles.knowledgesCard}>
+                                                <List sx={{ width: '100%', maxWidth: 360 }}>
                                                     <ListItem alignItems="center">
                                                         <ListItemAvatar>
-                                                            <LocationOnIcon className={styles.iconeAreaPersonaleLocation} />
+                                                            <LocationOnIcon className={styles.iconeAreaPersonaleLocation} fontSize='large' />
                                                         </ListItemAvatar>
                                                         <Grid container>
                                                             <Grid lg={12} item>
@@ -153,7 +153,7 @@ export default function Home() {
                                                                                 component="span"
                                                                                 variant="body2"
                                                                                 color="#a6a69e"
-                                                                                style={{ fontSize: 13 }}
+                                                                                style={{ fontSize: 15 }}
                                                                             >
                                                                                 Location
                                                                             </Typography>
@@ -167,11 +167,11 @@ export default function Home() {
                                                                     secondary={
                                                                         <React.Fragment>
                                                                             <Typography
-                                                                                s
+                                                                                sx={{ display: 'inline' }}
                                                                                 component="span"
                                                                                 variant="body2"
                                                                                 color="white"
-                                                                                style={{ fontSize: 13 }}
+                                                                                style={{ fontSize: 20 }}
                                                                             >
                                                                                 Italy Naples(NA)
                                                                             </Typography>
@@ -184,7 +184,7 @@ export default function Home() {
                                                     <Divider variant="inset" style={{ background: '#a6a69e' }} component="li" />
                                                     <ListItem alignItems="center">
                                                         <ListItemAvatar>
-                                                            <EmailIcon className={styles.iconeAreaPersonaleMail} />
+                                                            <EmailIcon className={styles.iconeAreaPersonaleMail} fontSize='large' />
                                                         </ListItemAvatar>
                                                         <Grid container>
                                                             <Grid lg={12} item>
@@ -197,7 +197,7 @@ export default function Home() {
                                                                                 component="span"
                                                                                 variant="body2"
                                                                                 color="#a6a69e"
-                                                                                style={{ fontSize: 13 }}
+                                                                                style={{ fontSize: 15 }}
                                                                             >
                                                                                 Email
                                                                             </Typography>
@@ -215,7 +215,7 @@ export default function Home() {
                                                                                 component="span"
                                                                                 variant="body2"
                                                                                 color="white"
-                                                                                style={{ fontSize: 13 }}
+                                                                                style={{ fontSize: 20 }}
                                                                             >
                                                                                 mannitiemanuele@gmail.com
                                                                             </Typography>
@@ -228,7 +228,7 @@ export default function Home() {
                                                     <Divider variant="inset" style={{ background: '#a6a69e' }} component="li" />
                                                     <ListItem alignItems="center">
                                                         <ListItemAvatar>
-                                                            <CalendarMonthIcon className={styles.iconeAreaPersonaleBirthday}/>
+                                                            <CalendarMonthIcon className={styles.iconeAreaPersonaleBirthday} fontSize='large' />
                                                         </ListItemAvatar>
                                                         <Grid container>
                                                             <Grid lg={12} item>
@@ -241,7 +241,7 @@ export default function Home() {
                                                                                 component="span"
                                                                                 variant="body2"
                                                                                 color="#a6a69e"
-                                                                                style={{ fontSize: 13 }}
+                                                                                style={{ fontSize: 15 }}
                                                                             >
                                                                                 Birthday
                                                                             </Typography>
@@ -259,7 +259,7 @@ export default function Home() {
                                                                                 component="span"
                                                                                 variant="body2"
                                                                                 color="white"
-                                                                                style={{ fontSize: 15 }}
+                                                                                style={{ fontSize: 20 }}
                                                                             >
                                                                                 Italy Naples(NA)
                                                                             </Typography>
@@ -272,7 +272,7 @@ export default function Home() {
                                                 </List>
                                             </Card>
                                         </Grid>
-                                        <Grid item xs={7} >
+                                        <Grid item lg={5} style={{ marginBottom: 20 }}>
                                             <a style={{ textDecoration: 'inherit' }} href={ImmagineProfilo} download><Button className={styles.bottoneDownloadCv} variant="text"><span style={{ fontWeight: 'bold' }}>DOWNLOAD CV</span></Button></a>
                                         </Grid>
                                     </Grid>
@@ -280,7 +280,7 @@ export default function Home() {
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Grid item sx={6} lg={6} style={{ marginTop: 20 }}>
+                    <Grid item sx={6} lg={6} style={{ marginTop: 40 }}>
                         <Card className={styles.componentePrincipale}>
                             {sezione}
                         </Card>
