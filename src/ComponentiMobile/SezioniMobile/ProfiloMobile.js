@@ -160,7 +160,7 @@ function ProfiloMobile() {
                                     <Divider variant="middle" style={{ background: '#a6a69e' }} component="li" />
                                     <ListItem alignItems="center">
                                         <ListItemAvatar>
-                                            <CalendarMonthIcon className={styles.iconeAreaPersonaleBirthday} fontSize='medium' />
+                                            <CalendarMonthIcon className={styles.iconeAreaPersonaleBirthday} fontSize='small' />
                                         </ListItemAvatar>
                                         <Grid container>
                                             <Grid xs={12} item>

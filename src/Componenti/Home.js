@@ -63,26 +63,25 @@ export default function Home() {
     return (
         <div className={styles.bodyHome}>
             <Grid container>
-
                 <Grid justifyContent="center" container>
-                    <Grid item style={{ marginTop: 70, marginLeft: -180 }} lg={3}>
+                    <Grid item style={{ marginTop: 70, marginLeft: -180 }} xs={3}>
                         <AppBar className={styles.appBar} position="relative">
                             <Toolbar>
                                 <Grid style={{ textAlign: 'center' }} container>
-                                    <Grid item xs={3}>
+                                    <Grid item xs={4}>
                                         <Button onClick={() => handleClickSection("AboutMe")} className={styles.iconeAppBar} variant="text"><HomeOutlinedIcon className={styles.iconaHome} fontSize='large' /> </Button>
                                     </Grid>
-                                    <Grid item xs={3}>
+                                    <Grid item xs={4}>
                                         <Button onClick={() => handleClickSection("Resume")} className={styles.iconeAppBar} variant="text"><ArticleIcon className={styles.iconaHome} fontSize='large' /></Button>
                                     </Grid>
-                                    <Grid item xs={3}>
+                                    <Grid item xs={4}>
                                         <Button onClick={() => handleClickSection("Portfolio")} className={styles.iconeAppBar} variant="text"><WorkIcon className={styles.iconaHome} fontSize='large' /></Button>
                                     </Grid>
-                                    <Grid item xs={3}>
+                                    {/* <Grid item xs={3}>
                                         <Link to="/disneyPlus">
                                             <Button className={styles.iconeAppBar} variant="text"><WorkIcon className={styles.iconaHome} fontSize='large' /></Button>
                                         </Link>
-                                    </Grid>
+                                    </Grid> */}
                                 </Grid>
                             </Toolbar>
                         </AppBar>

@@ -34,8 +34,8 @@
 .iconeAreaPersonaleLocation {
     margin-left: -10px;
     background-color: #111111 !important;
-    height: 45px;
-    width: 50px;
+    height: 20px;
+    width: 30px;
     border-radius: 1rem !important;
     color: rgb(11, 240, 218);
 }
@@ -48,8 +48,8 @@
 .iconeAreaPersonaleMail {
     margin-left: -10px;
     background-color: #111111 !important;
-    height: 45px;
-    width: 50px;
+    height: 20px;
+    width: 30px;
     border-radius: 1rem !important;
     color: #df2773;
 }
@@ -57,8 +57,8 @@
 .iconeAreaPersonaleBirthday {
     margin-left: -10px;
     background-color: #111111 !important;
-    height: 45px;
-    width: 50px;
+    height: 20px;
+    width: 30px;
     border-radius: 1rem !important;
     color: rgb(9, 216, 16);
 }

@@ -167,7 +167,7 @@ function ResumeMobile() {
                     <animated.div
                         style={{
                             width: 10,
-                            marginLeft: -15,
+                            marginLeft: -10,
                             height: 100,
                             background: '#ff6d6d',
                             borderRadius: 8,
