@@ -1,6 +1,8 @@
+//REACT
 import React, { useState, useEffect } from 'react'
-import ImmagineProfilo from '../Assets/fotoProfilo.jpg'
 import { Link } from 'react-router-dom';
+//IMMAGINI
+import ImmagineProfilo from '../Assets/fotoProfilo.jpg'
 //COMPONENTI MATERIAL
 import { Grid } from '@mui/material'
 import AppBar from '@mui/material/AppBar';

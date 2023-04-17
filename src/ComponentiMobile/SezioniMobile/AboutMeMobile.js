@@ -1,8 +1,9 @@
+//REACT
 import React from 'react';
+//MATERIAL UI
 import { Grid } from '@mui/material'
 import Card from '@mui/material/Card';
 import { Box } from '@mui/system';
-
 import Typography from '@mui/material/Typography';
 //CSS
 import mainStyles from '../Css/generalCss.module.css'

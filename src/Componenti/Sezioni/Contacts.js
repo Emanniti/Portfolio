@@ -1,6 +1,9 @@
+//REACT
 import React from 'react'
+//MATERIAL UI
 import { Grid } from '@mui/material'
 import CardContent from '@mui/material/CardContent';
+//CSS
 import styles from '../Css/resume.module.css'
 import resume from '../Css/resume.module.css'
 

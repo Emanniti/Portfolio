@@ -1,14 +1,18 @@
+//REACT
 import React, { useState } from 'react'
+//MATERIAL UI
 import { Box, DialogContent, Grid } from '@mui/material'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
+import DialogTitle from '@mui/material/DialogTitle';
+import Dialog from '@mui/material/Dialog';
+//CSS
 import styles from '../Css/portfolio.module.css'
 import mainStyles from '../Css/resume.module.css'
 import resume from '../Css/resume.module.css'
-import Sito1 from '../../Assets/sito1.png'
+//IMMAGINI
 import Sito1Home from '../../Assets/sito1home.png'
-import DialogTitle from '@mui/material/DialogTitle';
-import Dialog from '@mui/material/Dialog';
+import Sito1 from '../../Assets/sito1.png'
 
 
 function Portfolio() {
