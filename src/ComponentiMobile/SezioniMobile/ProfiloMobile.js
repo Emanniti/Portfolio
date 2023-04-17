@@ -9,6 +9,7 @@ import Divider from '@mui/material/Divider';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Typography from '@mui/material/Typography';
+import Curriculum from '../Assets/CV - Emanuele Manniti.pdf'
 //CSS
 import mainStyles from '../Css/generalCss.module.css'
 import styles from '../Css/homeMobile.module.css'
@@ -205,7 +206,7 @@ function ProfiloMobile() {
                             </Card>
                         </Grid>
                         <Grid item xs={12} style={{ marginBottom: 20, textAlign: 'center' }}>
-                            <a style={{ textDecoration: 'inherit' }} href={ImmagineProfilo} download><Button className={styles.bottoneDownloadCv} variant="text"><span style={{ fontWeight: 'bold' }}>DOWNLOAD CV</span></Button></a>
+                            <a style={{ textDecoration: 'inherit' }} href={Curriculum} download><Button className={styles.bottoneDownloadCv} variant="text"><span style={{ fontWeight: 'bold' }}>DOWNLOAD CV</span></Button></a>
                         </Grid>
                     </Grid>
                 </Card>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import ImmagineProfilo from '../Assets/fotoProfilo.jpg'
+import Curriculum from '../Assets/CV - Emanuele Manniti.pdf'
 import { Link } from 'react-router-dom';
 //COMPONENTI MATERIAL
 import { Grid } from '@mui/material'
@@ -273,7 +274,7 @@ export default function Home() {
                                             </Card>
                                         </Grid>
                                         <Grid item lg={7} style={{ marginBottom: 20 }}>
-                                            <a style={{ textDecoration: 'inherit' }} href={ImmagineProfilo} download><Button className={styles.bottoneDownloadCv} variant="text"><span style={{ fontWeight: 'bold' }}>DOWNLOAD CV</span></Button></a>
+                                            <a style={{ textDecoration: 'inherit' }} href={Curriculum} download><Button className={styles.bottoneDownloadCv} variant="text"><span style={{ fontWeight: 'bold' }}>DOWNLOAD CV</span></Button></a>
                                         </Grid>
                                     </Grid>
                                 </Card>
