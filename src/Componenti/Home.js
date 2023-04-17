@@ -64,7 +64,7 @@ export default function Home() {
         <div className={styles.bodyHome}>
             <Grid container>
                 <Grid justifyContent="center" container>
-                    <Grid item style={{ marginTop: 70, marginLeft: -120 }} xs={3}>
+                    <Grid item style={{ marginTop: 70}} xs={3}>
                         <AppBar className={styles.appBar} position="relative">
                             <Toolbar>
                                 <Grid style={{ textAlign: 'center' }} container>
@@ -88,7 +88,7 @@ export default function Home() {
                     </Grid>
                 </Grid>
                 <Grid container>
-                    <Grid item sx={6} lg={4} >
+                    <Grid item sx={6} lg={4.5} >
                         <Grid container >
                             <Grid item >
                                 <Card className={styles.cardPersonale} style={{ overflow: 'visible' }}>
