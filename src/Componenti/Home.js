@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import ImmagineProfilo from '../Assets/fotoProfilo.jpg'
 import Curriculum from '../Assets/CV - Emanuele Manniti.pdf'
-import { Link } from 'react-router-dom';
 //COMPONENTI MATERIAL
-import { Grid } from '@mui/material'
+import { Grid, Link } from '@mui/material'
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
@@ -125,12 +124,12 @@ export default function Home() {
                                         <Grid item lg={7} style={{ marginTop: -20 }}>
                                             <Grid spacing={1} justifyContent="center" container>
                                                 <Grid item xs={5}>
-                                                    <Link href="https://www.linkedin.com/in/emanuele-manniti-338360183/">
+                                                    <Link target="_blank" href="https://www.linkedin.com/in/emanuele-manniti-338360183/">
                                                         <Button className={styles.iconeLink} variant="text"><LinkedInIcon className={styles.iconaHome} fontSize='large' /></Button>
                                                     </Link>
                                                 </Grid>
                                                 <Grid item xs={5}>
-                                                    <Link href="https://github.com/Emanniti">
+                                                    <Link target="_blank" href="https://github.com/Emanniti">
                                                         <Button className={styles.iconeLink} variant="text"><GitHubIcon className={styles.iconaHome} fontSize='large' /></Button>
                                                     </Link>
                                                 </Grid>
