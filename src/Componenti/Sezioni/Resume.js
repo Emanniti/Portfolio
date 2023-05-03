@@ -478,11 +478,6 @@ function Resume() {
                             </Grid>
                             <Grid item xs={5} lg={6} >
                                 <Card className={styles.knowledgesCard}>
-                                    <span style={{ fontSize: 25, marginTop: 5, marginLeft: 10, color: '#484848' }}>Spring</span>
-                                </Card>
-                            </Grid>
-                            <Grid item xs={5} lg={6} >
-                                <Card className={styles.knowledgesCard}>
                                     <span style={{ fontSize: 25, marginTop: 5, marginLeft: 10, color: '#484848' }}>Microsoft Excel</span>
                                 </Card>
                             </Grid>

@@ -469,11 +469,6 @@ function ResumeMobile() {
                                     <span style={{ fontSize: 25, marginTop: 5, marginLeft: 10, color: '#484848' }}>React.js</span>
                                 </Card>
                             </Grid>
-                            <Grid item xs={7} lg={6} >
-                                <Card className={styles.knowledgesCard}>
-                                    <span style={{ fontSize: 25, marginTop: 5, marginLeft: 10, color: '#484848' }}>Spring</span>
-                                </Card>
-                            </Grid>
                             <Grid item xs={10} lg={6} >
                                 <Card className={styles.knowledgesCard}>
                                     <span style={{ fontSize: 25, marginTop: 5, marginLeft: 10, color: '#484848' }}>Microsoft Excel</span>
