@@ -5,6 +5,8 @@ import { styled } from '@mui/material/styles';
 import mainCss from '../progettiniCss/main.module.css'
 import Box from "@mui/material/Box";
 
+import resume from '../../Css/resume.module.css'
+
 const CssTextField = styled(TextField)({
     '& .MuiInputBase-input': {
         color: 'white',
@@ -32,6 +34,8 @@ function DisneyPlus() {
 
     useEffect(() => {
         document.body.classList.add(mainCss.bodyDisney);
+        document.body.classList.remove(resume.lineaPortfolio);
+        
         return () => {
             document.body.classList.remove(mainCss.bodyDisney);
         }

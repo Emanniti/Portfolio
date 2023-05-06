@@ -1,21 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap');
 
-
-hr {
-    margin-top: 35px !important;
-    display: block;
-    height: 3px;
-    border-radius: 2rem !important;
-    border: 0;
-    margin: 1em 0;
-    padding: 0;
-    background: rgb(241,0,0);
-    background: -moz-linear-gradient(90deg, rgba(241,0,0,1) 0%, rgba(219,127,127,1) 52%);
-    background: -webkit-linear-gradient(90deg, rgba(241,0,0,1) 0%, rgba(219,127,127,1) 52%);
-    background: linear-gradient(90deg, rgba(241,0,0,1) 0%, rgba(219,127,127,1) 52%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f10000",endColorstr="#db7f7f",GradientType=1);
-}
-
 .resumeBackground{
     background-color: #111111 !important;
 }

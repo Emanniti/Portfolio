@@ -37,7 +37,7 @@ export default function Home() {
         document.body.classList.add(styles.test);
         return () => {
             document.body.classList.remove(styles.test);
-            document.body.classList.remove(resume.hr);
+            document.body.classList.remove(resume.lineaPortfolio);
         }
     }, []);
 
@@ -77,11 +77,6 @@ export default function Home() {
                                     <Grid item xs={4}>
                                         <Button onClick={() => handleClickSection("Portfolio")} className={styles.iconeAppBar} variant="text"><WorkIcon className={styles.iconaHome} fontSize='large' /></Button>
                                     </Grid>
-                                    {/* <Grid item xs={3}>
-                                        <Link to="/disneyPlus">
-                                            <Button className={styles.iconeAppBar} variant="text"><WorkIcon className={styles.iconaHome} fontSize='large' /></Button>
-                                        </Link>
-                                    </Grid> */}
                                 </Grid>
                             </Toolbar>
                         </AppBar>
