@@ -64,11 +64,19 @@ function HomeMobile() {
                             hidden={false}
                             icon={<SpeedDialIcon />}
                             direction={'bottom'}
+                            FabProps={{
+                                sx: {
+                                  bgcolor: 'red',
+                                  '&:hover': {
+                                    bgcolor: 'red',
+                                  }
+                                }
+                              }}
                         >
                             {actions.map((action) => (
                                 <SpeedDialAction
                                     className={mainStyles.sezioniBar}
-                                    sx={{ width: 50, height: 50 }}
+                                    sx={{width: 50, height: 50, backgroundColor: 'black'}}
                                     onClick={() => handleClickSection(action.section)}
                                     key={action.name}
                                     icon={action.icon}

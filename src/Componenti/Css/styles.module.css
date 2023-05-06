@@ -52,8 +52,7 @@
 .cardPersonale {
     background-color: #0d0d0d !important;
     border-radius: 2rem !important;
-    position: fixed !important;
-    width: 500px;
+    width: 400px;
     margin-left: 2%;
     margin-top: -60px;
 }
@@ -117,7 +116,7 @@
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
     border-radius: 2rem !important;
-    height: 60px !important;
+    height: 50px !important;
     width: 200px !important;
     color: white !important;
 }

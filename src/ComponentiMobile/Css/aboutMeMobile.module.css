@@ -7,7 +7,8 @@
     border-width: 2px !important;
     border-color: #212425 !important;
     border-style: solid;
-    min-width: 350px;
+    min-width: 330px;
+    margin-left: 5px;
 }
 
 

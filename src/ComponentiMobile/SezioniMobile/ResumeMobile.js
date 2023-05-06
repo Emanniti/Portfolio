@@ -183,7 +183,7 @@ function ResumeMobile() {
                     <animated.div
                         style={{
                             width: 10,
-                            marginLeft: -15,
+                            marginLeft: -10,
                             height: 100,
                             background: '#ff6d6d',
                             borderRadius: 8,
@@ -472,11 +472,6 @@ function ResumeMobile() {
                             <Grid item xs={7} lg={5} >
                                 <Card className={styles.knowledgesCard}>
                                     <span style={{ fontSize: 25, marginTop: 5, marginLeft: 10, color: '#484848' }}>React.js</span>
-                                </Card>
-                            </Grid>
-                            <Grid item xs={7} lg={6} >
-                                <Card className={styles.knowledgesCard}>
-                                    <span style={{ fontSize: 25, marginTop: 5, marginLeft: 10, color: '#484848' }}>Spring</span>
                                 </Card>
                             </Grid>
                             <Grid item xs={10} lg={6} >

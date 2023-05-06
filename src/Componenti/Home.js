@@ -1,10 +1,10 @@
 //REACT
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom';
+import Curriculum from '../Assets/CV - Emanuele Manniti.pdf'
 //IMMAGINI
 import ImmagineProfilo from '../Assets/fotoProfilo.jpg'
 //COMPONENTI MATERIAL
-import { Grid } from '@mui/material'
+import { Grid, Link } from '@mui/material'
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
@@ -39,7 +39,7 @@ export default function Home() {
         document.body.classList.add(styles.test);
         return () => {
             document.body.classList.remove(styles.test);
-            document.body.classList.remove(resume.hr);
+            document.body.classList.remove(resume.lineaPortfolio);
         }
     }, []);
 
@@ -65,25 +65,19 @@ export default function Home() {
     return (
         <div className={styles.bodyHome}>
             <Grid container>
-
                 <Grid justifyContent="center" container>
-                    <Grid item style={{ marginTop: 70, marginLeft: -180 }} lg={3}>
+                    <Grid item style={{ marginTop: 70}} xs={3}>
                         <AppBar className={styles.appBar} position="relative">
                             <Toolbar>
                                 <Grid style={{ textAlign: 'center' }} container>
-                                    <Grid item xs={3}>
+                                    <Grid item xs={4}>
                                         <Button onClick={() => handleClickSection("AboutMe")} className={styles.iconeAppBar} variant="text"><HomeOutlinedIcon className={styles.iconaHome} fontSize='large' /> </Button>
                                     </Grid>
-                                    <Grid item xs={3}>
+                                    <Grid item xs={4}>
                                         <Button onClick={() => handleClickSection("Resume")} className={styles.iconeAppBar} variant="text"><ArticleIcon className={styles.iconaHome} fontSize='large' /></Button>
                                     </Grid>
-                                    <Grid item xs={3}>
+                                    <Grid item xs={4}>
                                         <Button onClick={() => handleClickSection("Portfolio")} className={styles.iconeAppBar} variant="text"><WorkIcon className={styles.iconaHome} fontSize='large' /></Button>
-                                    </Grid>
-                                    <Grid item xs={3}>
-                                        <Link to="/disneyPlus">
-                                            <Button className={styles.iconeAppBar} variant="text"><WorkIcon className={styles.iconaHome} fontSize='large' /></Button>
-                                        </Link>
                                     </Grid>
                                 </Grid>
                             </Toolbar>
@@ -91,20 +85,20 @@ export default function Home() {
                     </Grid>
                 </Grid>
                 <Grid container>
-                    <Grid item sx={6} lg={4} >
+                    <Grid item sx={6} lg={4.5} >
                         <Grid container >
                             <Grid item >
                                 <Card className={styles.cardPersonale} style={{ overflow: 'visible' }}>
                                     <Grid spacing={4} justifyContent="center" container>
-                                        <Grid item lg={8.1}>
+                                        <Grid item lg={8}>
                                             <Box
                                                 className={styles.immagine}
                                                 component="img"
                                                 style={{ marginTop: -120 }}
                                                 src={ImmagineProfilo}
                                                 sx={{
-                                                    height: 300,
-                                                    width: 330,
+                                                    height: 220,
+                                                    width: 250,
                                                     maxHeight: { xs: 300, md: 300 },
                                                     maxWidth: { xs: 440, md: 440 },
                                                 }}
@@ -112,27 +106,27 @@ export default function Home() {
                                         </Grid>
                                     </Grid>
                                     <Grid spacing={4} justifyContent="center" container>
-                                        <Grid item lg={10}>
-                                            <span className={styles.robotoFont} style={{ color: 'white', fontSize: 40, marginLeft: 30 }}>Emanuele Manniti</span>
+                                        <Grid item lg={12}>
+                                            <span className={styles.robotoFont} style={{ color: 'white', fontSize: 30, marginLeft: 70 }}>Emanuele Manniti</span>
                                         </Grid>
                                         <Grid item lg={7}>
                                             <Grid spacing={4} justifyContent="center" container>
                                                 <Grid item lg={10}>
                                                     <Card className={styles.knowledgesCard}>
-                                                        <span style={{ fontSize: 25, color: '#a6a69e' }}>Web Developer</span>
+                                                        <span style={{ fontSize: 20, color: '#a6a69e' }}>Web Developer</span>
                                                     </Card>
                                                 </Grid>
                                             </Grid>
                                         </Grid>
                                         <Grid item lg={7} style={{ marginTop: -20 }}>
                                             <Grid spacing={1} justifyContent="center" container>
-                                                <Grid item xs={3}>
-                                                    <Link href="https://www.linkedin.com/in/emanuele-manniti-338360183/">
+                                                <Grid item xs={5}>
+                                                    <Link target="_blank" href="https://www.linkedin.com/in/emanuele-manniti-338360183/">
                                                         <Button className={styles.iconeLink} variant="text"><LinkedInIcon className={styles.iconaHome} fontSize='large' /></Button>
                                                     </Link>
                                                 </Grid>
-                                                <Grid item xs={3}>
-                                                    <Link href="https://github.com/Emanniti">
+                                                <Grid item xs={5}>
+                                                    <Link target="_blank" href="https://github.com/Emanniti">
                                                         <Button className={styles.iconeLink} variant="text"><GitHubIcon className={styles.iconaHome} fontSize='large' /></Button>
                                                     </Link>
                                                 </Grid>
@@ -174,7 +168,7 @@ export default function Home() {
                                                                                 component="span"
                                                                                 variant="body2"
                                                                                 color="white"
-                                                                                style={{ fontSize: 20 }}
+                                                                                style={{ fontSize: 15 }}
                                                                             >
                                                                                 Italy Naples(NA)
                                                                             </Typography>
@@ -218,7 +212,7 @@ export default function Home() {
                                                                                 component="span"
                                                                                 variant="body2"
                                                                                 color="white"
-                                                                                style={{ fontSize: 20 }}
+                                                                                style={{ fontSize: 13 }}
                                                                             >
                                                                                 mannitiemanuele@gmail.com
                                                                             </Typography>
@@ -262,7 +256,7 @@ export default function Home() {
                                                                                 component="span"
                                                                                 variant="body2"
                                                                                 color="white"
-                                                                                style={{ fontSize: 20 }}
+                                                                                style={{ fontSize: 15 }}
                                                                             >
                                                                                 Italy Naples(NA)
                                                                             </Typography>
@@ -275,15 +269,15 @@ export default function Home() {
                                                 </List>
                                             </Card>
                                         </Grid>
-                                        <Grid item lg={5} style={{ marginBottom: 20 }}>
-                                            <a style={{ textDecoration: 'inherit' }} href={ImmagineProfilo} download><Button className={styles.bottoneDownloadCv} variant="text"><span style={{ fontWeight: 'bold' }}>DOWNLOAD CV</span></Button></a>
+                                        <Grid item lg={7} style={{ marginBottom: 20 }}>
+                                            <a style={{ textDecoration: 'inherit' }} href={Curriculum} download><Button className={styles.bottoneDownloadCv} variant="text"><span style={{ fontWeight: 'bold' }}>DOWNLOAD CV</span></Button></a>
                                         </Grid>
                                     </Grid>
                                 </Card>
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Grid item sx={6} lg={6} style={{ marginTop: 40 }}>
+                    <Grid item sx={5} lg={6} style={{ marginTop: 40 }}>
                         <Card className={styles.componentePrincipale}>
                             {sezione}
                         </Card>

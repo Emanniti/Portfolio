@@ -52,10 +52,10 @@ function AboutMeMobile() {
                                                 <DesignServicesIcon style={{ color: '#a200fc' }} fontSize='large'></DesignServicesIcon>
                                             </Grid>
                                             <Grid item xs={6} style={{ marginTop: 10 }}>
-                                                <span className={styles.robotoFont} style={{ color: 'white', marginLeft: 10, fontSize: 25 }}>Ui/Ux Design</span>
+                                                <span className={styles.robotoFont} style={{ color: 'white', marginLeft: 10, fontSize: 20 }}>Ui/Ux Design</span>
                                             </Grid>
                                             <Grid item lg={12} xs={12} style={{ marginLeft: 10, }}>
-                                                <span className={styles.robotoFont} style={{ color: '#a6a6a6', fontSize: 17, }}>Ability to design a user interface. Design layouts and improve, modernize existing design environments.</span>
+                                                <span className={styles.robotoFont} style={{ color: '#a6a6a6', fontSize: 15, }}>Ability to design a user interface. Design layouts and improve, modernize existing design environments.</span>
                                             </Grid>
                                         </Grid>
                                     </Card>
@@ -67,10 +67,10 @@ function AboutMeMobile() {
                                                 <CodeIcon style={{ color: '#269fff' }} fontSize='large'></CodeIcon>
                                             </Grid>
                                             <Grid item xs={8} style={{ marginTop: 10 }}>
-                                                <span className={styles.robotoFont} style={{ color: 'white', marginLeft: 10, fontSize: 25 }}>Web development</span>
+                                                <span className={styles.robotoFont} style={{ color: 'white', marginLeft: 10, fontSize: 20 }}>Web development</span>
                                             </Grid>
                                             <Grid item xs={12} style={{ marginLeft: 10, }}>
-                                                <span className={styles.robotoFont} style={{ color: '#a6a6a6', fontSize: 17, }}>Good command of web programming languages (Javascript, Node.js) and the React framework.</span>
+                                                <span className={styles.robotoFont} style={{ color: '#a6a6a6', fontSize: 15, }}>Good command of web programming languages (Javascript, Node.js) and the React framework.</span>
                                             </Grid>
                                         </Grid>
                                     </Card>
@@ -82,10 +82,10 @@ function AboutMeMobile() {
                                                 <StorageIcon style={{ color: 'grey' }} fontSize='large'></StorageIcon>
                                             </Grid>
                                             <Grid item xs={10} style={{ marginTop: 10 }}>
-                                                <span className={styles.robotoFont} style={{ color: 'white', marginLeft: 10, fontSize: 25 }}>Server management</span>
+                                                <span className={styles.robotoFont} style={{ color: 'white', marginLeft: 10, fontSize: 20 }}>Server management</span>
                                             </Grid>
                                             <Grid item xs={12} style={{ marginLeft: 10, }}>
-                                                <span className={styles.robotoFont} style={{ color: '#a6a6a6', fontSize: 17, }}>Optimize the speed, stability, and scalability of servers and code.</span>
+                                                <span className={styles.robotoFont} style={{ color: '#a6a6a6', fontSize: 15, }}>Optimize the speed, stability, and scalability of servers and code.</span>
                                             </Grid>
                                         </Grid>
                                     </Card>
@@ -97,20 +97,20 @@ function AboutMeMobile() {
                                                 <DataArrayIcon style={{ color: 'yellow' }} fontSize='large'></DataArrayIcon>
                                             </Grid>
                                             <Grid item xs={8} style={{ marginTop: 10 }}>
-                                                <span className={styles.robotoFont} style={{ color: 'white', marginLeft: 10, fontSize: 25 }}>Data modeling</span>
+                                                <span className={styles.robotoFont} style={{ color: 'white', marginLeft: 10, fontSize: 20 }}>Data modeling</span>
                                             </Grid>
                                             <Grid item xs={12} style={{ marginLeft: 10, }}>
-                                                <span className={styles.robotoFont} style={{ color: '#a6a6a6', fontSize: 17, }}>Data modeling for database storage, creation of API's for backend-frontend communication and saving it to the databases.</span>
+                                                <span className={styles.robotoFont} style={{ color: '#a6a6a6', fontSize: 15, }}>Data modeling for database storage, creation of API's for backend-frontend communication and saving it to the databases.</span>
                                             </Grid>
                                         </Grid>
                                     </Card>
                                 </Grid>
                             </Grid>
-                            <Grid item lg={12} xs={12} style={{ marginTop: 40 }}>
+                            <Grid item lg={12} xs={12} style={{ marginTop: 10 }}>
                                 <span className={styles.robotoFont} style={{ color: 'white', fontSize: 35, marginLeft: 10 }}>Who I work for: </span>
                             </Grid>
                             <Grid container justifyContent="left" spacing={5} >
-                                <Grid item xs={4} style={{ marginTop: 110 }}>
+                                <Grid item xs={4} style={{ marginTop: 90 }}>
                                     <a href="https://www.accenture.com" rel="noreferrer" target="_blank">
                                         <Box
                                             className={styles.immagine}
@@ -118,7 +118,7 @@ function AboutMeMobile() {
                                             style={{ marginTop: -120 }}
                                             src={LogoAccenture}
                                             sx={{
-                                                height: 100,
+                                                height: 110,
                                                 width: 150,
                                                 maxHeight: { xs: 300, md: 300 },
                                                 maxWidth: { xs: 440, md: 440 },
@@ -126,12 +126,12 @@ function AboutMeMobile() {
                                         />
                                     </a>
                                 </Grid>
-                                <Grid item xs={6} style={{ marginTop: 110 }}>
+                                <Grid item xs={6} style={{ marginTop: 90 }}>
                                     <a href="https://matrixconsulting.it/" rel="noreferrer" target="_blank">
                                         <Box
                                             className={styles.immagine}
                                             component="img"
-                                            style={{ marginTop: -120 }}
+                                            style={{ marginTop: -90 }}
                                             src={LogoMatrix}
                                             sx={{
                                                 height: 90,

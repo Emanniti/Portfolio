@@ -1,19 +1,20 @@
 import './index.css';
 import Home from './Componenti/Home';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import DisneyPlus from './Componenti/Progettini/DisneyPlus/DisneyPlus';
-import SelectProfile from './Componenti/Progettini/DisneyPlus/SelectProfile';
-import FilmsDisney from './Componenti/Progettini/DisneyPlus/FilmsDisney';
+// import DisneyPlus from './Componenti/Progettini/DisneyPlus/DisneyPlus';
+// import SelectProfile from './Componenti/Progettini/DisneyPlus/SelectProfile';
+// import FilmsDisney from './Componenti/Progettini/DisneyPlus/FilmsDisney';
+import RedirectForMobile from './RedirectForMobile';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="*" element={<Home />} />
+        <Route path="*" element={<RedirectForMobile />} />
         {/* DISNEY PLUS */}
-        <Route path="/disneyPlus" element={<DisneyPlus />} />
+        {/* <Route path="/disneyPlus" element={<DisneyPlus />} />
         <Route path="/disneyPlus/selectProfile" element={<SelectProfile />} />
-        <Route path="/disneyPlus/films" element={<FilmsDisney />} />
+        <Route path="/disneyPlus/films" element={<FilmsDisney />} /> */}
       </Routes>
     </BrowserRouter>
   );
