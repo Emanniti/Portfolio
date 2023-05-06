@@ -1,11 +1,15 @@
+//REACT
 import React from 'react'
+//MATERIAL UI
 import { Box, Card, Grid, Typography } from '@mui/material'
 import CardContent from '@mui/material/CardContent';
+//CSS
 import styles from '../Css/aboutMe.module.css'
 import mainStyles from '../Css/resume.module.css'
+import resume from '../Css/resume.module.css'
+//IMMAGINI LOGO
 import LogoAccenture from '../../Assets/accenture-transparent.png'
 import LogoMatrix from '../../Assets/logo.png'
-import resume from '../Css/resume.module.css'
 //ICONE
 import CodeIcon from '@mui/icons-material/Code';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';

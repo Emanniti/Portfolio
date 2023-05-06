@@ -1,16 +1,24 @@
+//REACT
 import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
+//MATERIAL
 import { AppBar, Avatar, Box, Grid, IconButton, Stack, Toolbar, Typography } from '@mui/material';
+//CSS
 import mainCss from '../progettiniCss/main.module.css'
 
 const profili = [{ urlImmagine: "", nomeProfilo: "Emanuele" }, { urlImmagine: "", nomeProfilo: "Francesca" }, { urlImmagine: "", nomeProfilo: "Ospite" }]
 
 function SelectProfile() {
 
+    const [loading, setLoading] = React.useState(true);
+
     let navigate = useNavigate();
 
     useEffect(() => {
         document.body.classList.add(mainCss.bodyDisney);
+        setTimeout(function(){
+            setLoading(false)
+        }, 1000);
         return () => {
             document.body.classList.remove(mainCss.bodyDisney);
         }
@@ -22,7 +30,10 @@ function SelectProfile() {
 
     return (
         <div>
-
+            {loading === true ? 
+             <Box display="flex" justifyContent="center" alignItems="center" minHeight="100vh"><div className={mainCss.spinner}></div></Box> 
+             : 
+            <div>
             <AppBar style={{ backgroundColor: '#1a1d29' }} elevation={0} position="absolute">
                 <Toolbar>
                     <img
@@ -65,7 +76,9 @@ function SelectProfile() {
                         </Stack>
                     </Grid>
                 </Grid>
+                
             </Box>
+            </div>}
         </div>
     );
 }

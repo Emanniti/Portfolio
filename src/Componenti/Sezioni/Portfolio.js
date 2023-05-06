@@ -1,31 +1,36 @@
 import React, { useEffect, useState } from 'react'
-import { Box, Button, DialogContent, Grid } from '@mui/material'
+//REACT
+import { Box, DialogContent, Grid } from '@mui/material'
+// import { Button } from '@mui/material'
+//MATERIAL UI
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
+import DialogTitle from '@mui/material/DialogTitle';
+import Dialog from '@mui/material/Dialog';
+//CSS
 import styles from '../Css/portfolio.module.css'
 import mainStyles from '../Css/resume.module.css'
 import resume from '../Css/resume.module.css'
-import Sito1 from '../../Assets/sito1.png'
+//IMMAGINI
 import Sito1Home from '../../Assets/sito1home.png'
-import SitoDisney from '../../Assets/logoDisney.png'
-import HomeDsiney from '../../Assets/homeDisney.png'
-import DialogTitle from '@mui/material/DialogTitle';
-import Dialog from '@mui/material/Dialog';
-import { Link } from 'react-router-dom';
+// import SitoDisney from '../../Assets/logoDisney.png'
+import Sito1 from '../../Assets/sito1.png'
+// import HomeDsiney from '../../Assets/homeDisney.png'
+// import { Link } from 'react-router-dom';
 
 
 function Portfolio() {
 
     const [openCrowd, setOpenCrowd] = useState(false);
-    const [openDisney, setOpenDisney] = useState(false);
+    // const [openDisney, setOpenDisney] = useState(false);
 
-    const handleCloseDisney = () => {
-        setOpenDisney(false);
-    };
+    // const handleCloseDisney = () => {
+    //     setOpenDisney(false);
+    // };
 
-    const handleOpenDisney = () => {
-        setOpenDisney(true);
-    };
+    // const handleOpenDisney = () => {
+    //     setOpenDisney(true);
+    // };
 
     const handleCloseCrowd = () => {
         setOpenCrowd(false);

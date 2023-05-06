@@ -1,6 +1,8 @@
+//REACT
 import React, { useState, useEffect } from 'react'
-import ImmagineProfilo from '../Assets/fotoProfilo.jpg'
 import Curriculum from '../Assets/CV - Emanuele Manniti.pdf'
+//IMMAGINI
+import ImmagineProfilo from '../Assets/fotoProfilo.jpg'
 //COMPONENTI MATERIAL
 import { Grid, Link } from '@mui/material'
 import AppBar from '@mui/material/AppBar';

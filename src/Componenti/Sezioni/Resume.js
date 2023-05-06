@@ -1,16 +1,22 @@
+//REACT
 import React from 'react'
+//MATERIAL UI
 import { Grid } from '@mui/material'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
-import WorkOutlineOutlinedIcon from '@mui/icons-material/WorkOutlineOutlined';
 import LinearProgress from '@mui/material/LinearProgress';
 import Box from '@mui/material/Box';
+import { linearProgressClasses } from '@mui/material/LinearProgress';
+//ICONE MATERIAL
+import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
+import WorkOutlineOutlinedIcon from '@mui/icons-material/WorkOutlineOutlined';
+//SPRING FRAMEWORK
 import { useSpring, animated } from '@react-spring/web'
+//CSS
 import styles from '../Css/resume.module.css'
 import resume from '../Css/resume.module.css'
+//MATERIAL CSS
 import { styled } from '@mui/material/styles';
-import { linearProgressClasses } from '@mui/material/LinearProgress';
 
 
 function Resume() {

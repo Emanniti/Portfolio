@@ -1,7 +1,5 @@
 import './index.css';
-import Home from './Componenti/Home';
-// import { Grid } from '@mui/material';
-// import HomeMobile from './ComponentiMobile/HomeMobile';
+// import Home from './Componenti/Home';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import DisneyPlus from './Componenti/Progettini/DisneyPlus/DisneyPlus';
 // import SelectProfile from './Componenti/Progettini/DisneyPlus/SelectProfile';

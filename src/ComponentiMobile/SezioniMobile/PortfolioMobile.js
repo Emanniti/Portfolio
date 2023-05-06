@@ -1,12 +1,16 @@
+//REACT
 import React, { useState } from 'react'
+//MATERIAL UI
 import { Box, DialogContent, Grid } from '@mui/material'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import styles from '../Css/portfolioMobile.module.css'
-import mainStyles from '../Css/generalCss.module.css'
-import Sito1 from '../../Assets/sito1.png'
 import DialogTitle from '@mui/material/DialogTitle';
 import Dialog from '@mui/material/Dialog';
+//CSS
+import styles from '../Css/portfolioMobile.module.css'
+import mainStyles from '../Css/generalCss.module.css'
+//COMPONENTI CUSTOM
+import Sito1 from '../../Assets/sito1.png'
 
 
 function PortfolioMobile() {
