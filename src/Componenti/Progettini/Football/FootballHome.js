@@ -1,10 +1,13 @@
+//REACT
 import React, { useState } from "react";
+//MATERIAL UI
 import { Grid } from '@mui/material'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+//CSS
 import FootballCss from "../Football/CssFootball/football.module.css"
 
 function FootballHome() {
