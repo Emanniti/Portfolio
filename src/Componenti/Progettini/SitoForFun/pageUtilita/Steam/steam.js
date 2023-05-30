@@ -45,21 +45,38 @@ function SteamHome() {
         }
     }, []);
 
-    function handleFiltra() {
+    async function handleFiltra() {
         // let url = "https://cors-anywhere.herokuapp.com/http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=FB401232604477A3C8B1A14958177736&steamid=76561198079612239&include_appinfo=true&include_played_free_games=true&format=json"
-        let urlProfilo = "https://cors-anywhere.herokuapp.com/http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=FB401232604477A3C8B1A14958177736&steamids=" + steamId
-        let urlGiochi = "https://cors-anywhere.herokuapp.com/http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=FB401232604477A3C8B1A14958177736&steamid=" + steamId + "&include_appinfo=true&include_played_free_games=true&format=json"
-        axios.get(urlProfilo).then((response) => {
+        // let urlProfilo = "http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=FB401232604477A3C8B1A14958177736&steamids=" + steamId
+        // let urlGiochi = "http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=FB401232604477A3C8B1A14958177736&steamid=" + steamId + "&include_appinfo=true&include_played_free_games=true&format=json"
+        // https://nodejs-serverless-function-express-emanniti.vercel.app/api/getSteamUser?steamId=76561198079612239
+        let urlProfilo = "nodejs-serverless-function-express-emanniti.vercel.app/api/getSteamUser";
+        let urlGiochi = "nodejs-serverless-function-express-emanniti.vercel.app/api/getSteamGames";
+
+        setItems(null);
+        setGames(null);
+        setSteamId("");
+
+        axios.get(urlProfilo, {
+            params: {
+                steamId: steamId
+            }
+        }).then((response) => {
             setItems(response.data.response.players[0]);
+        });
 
-        }).then(
-            axios.get(urlGiochi).then((response) => {
-                setGames(response.data.response);
-                setShowStats(true)
-            })
-        );
+        axios.get(urlGiochi, {
+            params: {
+                steamId: steamId
+            }
+        }).then((response) => {
+            setGames(response.data.response);
+            setShowStats(true)
+        });
+
+
+
     }
-
 
     function handleSteamId(params) {
         setSteamId(params.target.value)
@@ -105,8 +122,8 @@ function SteamHome() {
                     </CardSteam>}
                 </Grid>
             </Grid>
-                        <div className={SteamCss.tornaSu}><Button onClick={() => scrollTop()}>torna su </Button></div>
-            
+            <div className={SteamCss.tornaSu}><Button onClick={() => scrollTop()}>torna su </Button></div>
+
         </div>
     );
 }

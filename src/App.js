@@ -21,7 +21,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="*" element={<NoPage />} />
+        <Route path="*" element={<RedirectForMobile />} />
         <Route path="/home" element={<RedirectForMobile />} />
         {/* DISNEY PLUS */}
         <Route path="/disneyPlus" element={<DisneyPlus />} />
