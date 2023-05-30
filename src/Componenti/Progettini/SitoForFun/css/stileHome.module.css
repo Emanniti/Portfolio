@@ -1,0 +1,50 @@
+.navbar{
+    margin-top: 0px;
+    background-color: red;
+}
+
+.stileBottoneNavBar:hover{
+    background-color: black;
+}
+
+.toolBar{
+    background-color: #3d74b3
+}
+
+.bottoniNavBar{
+    border-radius: 2rem;
+    width: 200px;
+    height: 40px;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.bottoniNavBar:hover{
+    background-color: black
+}
+
+.test{
+    margin-top: 60px
+}
+
+body{
+    background-color: #8f94fb;
+}
+
+.bottoniUtilita{
+    border-radius: 2rem;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+

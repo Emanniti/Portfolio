@@ -34,13 +34,11 @@ function FootballHome() {
     };
 
     const handleScoreHome = (row) => {
-        debugger;
         let index = row.scores.findIndex(squadra => squadra.name === row.home_team)
         return row.scores[index].score
     };
 
     const handleScoreAway = (row) => {
-        debugger;
         let index = row.scores.findIndex(squadra => squadra.name === row.away_team)
         return row.scores[index].score
     };

@@ -2,6 +2,8 @@ import Sito1 from '../../../Assets/sito1.png'
 import SitoDisney from '../../../Assets/logoDisney.png'
 import HomeDisney from '../../../Assets/homeDisney.png'
 import Sito1Home from '../../../Assets/sito1home.png'
+import SitoForFunHome from "../../../Assets/Screenshot 2023-05-29 211554.png"
+import SitoForFunImmagineInterna from "../../../Assets/SitoForFunImmagineInterna.png"
 
 export const listPortfolio = [{
     titolo: "Website",
@@ -33,6 +35,20 @@ export const listPortfolio = [{
     aperto: false,
 },
 {
+    titolo: "Sito for fun",
+    descrizione: "For Fun",
+    immagine: SitoForFunImmagineInterna,
+    altezza: 200,
+    larghezza: 250,
+    progetto: "Project: Sito per testare alcune cose",
+    linguaggi: "Languages: Javascript",
+    cliente: "Client: Me",
+    prewiew: "FunSite",
+    descrizioneInterna: "Sito creato per fare cose random e divertirmi",
+    immagineInterna: SitoForFunHome,
+    aperto: false,
+},
+{
     titolo: "Calcio site",
     descrizione: "Football",
     immagine: "",
@@ -42,7 +58,7 @@ export const listPortfolio = [{
     linguaggi: "Languages: Javascript",
     cliente: "Client: Me",
     prewiew: "Football",
-    descrizioneInterna: "ciao3",
+    descrizioneInterna: "Sito di calcio per vedere i risultati delle partite",
     immagineInterna: "",
     aperto: false,
-}]
+},]

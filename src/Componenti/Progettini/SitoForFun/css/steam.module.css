@@ -1,0 +1,21 @@
+.bodySteam{
+    background-color: #171d25;
+}
+
+.appBarCss{
+    background-color: #000000 !important;
+    border-radius: 1rem;
+}
+
+
+.cardSteam{
+    background-color: #000000 !important;
+    border-radius: 2rem !important;
+}
+
+.tornaSu{
+    top: 50% !important;
+    background-color: blue;
+    border-radius: 2rem;
+    position: fixed !important;
+}

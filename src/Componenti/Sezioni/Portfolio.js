@@ -17,25 +17,22 @@ import { Link } from 'react-router-dom';
 
 function Portfolio() {
 
-    const [open, setOpen] = useState(false);
     const [lista, setLista] = useState([]);
 
     const handleClose = (progetto) => {
-        setOpen(false);
         let list = lista;
         let index;
         index = lista.findIndex(e => e.titolo === progetto)
         list[index].aperto = false
-        setLista(list)
+        setLista(list.map(e => e.titolo === progetto ? Object.assign(list[index].aperto, false) : e))
     };
 
     const handleOpen = (progetto) => {
-        setOpen(true);
         let list = lista;
         let index;
         index = lista.findIndex(e => e.titolo === progetto)
         list[index].aperto = true
-        setLista(list)
+        setLista(list.map(e => e.titolo === progetto ? Object.assign(list[index].aperto, true) : e))
     };
 
     const handleLink = (titolo, prewiew) => {
@@ -46,21 +43,22 @@ function Portfolio() {
                 return <Link to="/disneyPlus"><Button className={styles.iconeAppBar} variant="text">{prewiew}</Button></Link>
             case "Calcio site":
                 return <Link to="/football"><Button className={styles.iconeAppBar} variant="text">{prewiew}</Button></Link>
+            case "Sito for fun":
+                return <Link to="/sitoForFun"><Button className={styles.iconeAppBar} variant="text">{prewiew}</Button></Link>
             default:
-                break;
+                return <span className={styles.robotoFont} style={{ color: 'white', fontSize: 18, paddingLeft: 10 }}><a style={{ color: 'white' }} rel="noreferrer" href={prewiew} target="_blank">{titolo}</a></span>
         }
     };
 
     useEffect(() => {
         document.body.classList.add(styles.test);
-        console.log(open)
         setLista(listPortfolio)
         return () => {
             document.body.classList.remove(styles.test);
             document.body.classList.remove(resume.lineaPortfolio);
             setLista(listPortfolio)
         }
-    }, [open]);
+    }, [ lista]);
 
     return (
         <div>
