@@ -11,7 +11,7 @@ import StileHome from  "./css/stileHome.module.css";
 function Test() {
   return (
     <div>
-        <div class="area">
+        <div>
           <AppBar className={StileHome.navBAR}>
             <Toolbar className={StileHome.toolBar}>
               <IconButton
@@ -35,7 +35,7 @@ function Test() {
                 </Button>
 
                 <Button variant="text">
-                  <Link to="/contact" className={StileHome.bottoniNavBar}>
+                  <Link to="/informazioniSito" className={StileHome.bottoniNavBar}>
                     Informazioni
                   </Link>
                 </Button>

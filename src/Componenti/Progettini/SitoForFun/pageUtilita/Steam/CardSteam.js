@@ -97,6 +97,15 @@ function CardSteam(props) {
         setLisdtaGiochi(list);
     }
 
+    function handleStyle(row) {
+        let style = {}
+
+        if(row.name !== ""){
+            style = {backgorundColor: "red"}
+        }
+
+    }
+
     return (
         <Card className={SteamCss.cardSteam} style={{ marginTop: 50 }} sx={{ maxWidth: 1000 }}>
             <Grid style={{ marginTop: 10, marginLeft: 10 }} container spacing={3}>
@@ -176,7 +185,7 @@ function CardSteam(props) {
                                         </TableHead>
                                         <TableBody>
                                             {listaGiochi.sort(function (a, b) { return b.playtime_forever - a.playtime_forever }).map((row) => (
-                                                <StyledTableRow key={row.name}>
+                                                <StyledTableRow key={row.name} style={handleStyle(row)}>
                                                     <StyledTableCell component="th" scope="row">
                                                         <Grid container>
                                                             <Grid item>

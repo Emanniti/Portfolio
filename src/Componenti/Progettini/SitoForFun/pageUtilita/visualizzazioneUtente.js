@@ -10,7 +10,7 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import Test from "../contenitore";
 
-const url = "http://localhost:8080/api/Utenti/getAllUtenti";
+const url = "http://localhost:2020/getUtenti";
 
 function VisualizzazioneUtente() {
   const [post, setPost] = React.useState(null);
@@ -18,7 +18,6 @@ function VisualizzazioneUtente() {
   React.useEffect(() => {
     axios.get(url).then((response) => {
       setPost(response.data);
-      console.log(response.data);
     });
   }, []);
 
@@ -39,16 +38,16 @@ function VisualizzazioneUtente() {
           </TableHead>
           {post != null || undefined ? (
             <TableBody>
-              {post.map((row) => (
+              {post.map((row, index) => (
                 <TableRow
-                  key={row.id}
+                  key={index}
                   sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                 >
                   <TableCell component="th" scope="row">
-                    {row.nome}
+                    {row.split('-')[0]}
                   </TableCell>
-                  <TableCell align="left">{row.cognome}</TableCell>
-                  <TableCell align="left">{row.email}</TableCell>
+                  <TableCell align="left">{row.split('-')[1]}</TableCell>
+                  <TableCell align="left">{row.split('-')[2]}</TableCell>
                 </TableRow>
               ))}
             </TableBody>

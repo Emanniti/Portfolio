@@ -9,13 +9,12 @@ import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
 import Test from "../contenitore";
 
-const baseURL = "http://localhost:8080/api/Utenti/salvaUtente";
+const baseURL = "http://localhost:2020/salvaUtente";
 
 function InserimentoUtente() {
   const [nome, setNome] = useState("");
   const [cognome, setCognome] = useState("");
   const [email, setEmail] = useState("");
-  const [post, setPost] = React.useState(null);
   const [disabled, setDisabled] = useState(false);
   const [open, setOpen] = React.useState(false);
 
@@ -51,20 +50,14 @@ function InserimentoUtente() {
     setOpen(false);
   };
 
-    function createPost() {
-        axios.post(baseURL, {
-          nome: nome,
-          cognome: cognome,
-          email: email
-        })
-        .then((response) => {
-          setPost(response.data);
-          console.log(post)
-          setOpen(true)
-        })
-        .catch(function (error) {
-            console.log(error);
-          });
+    async function createPost() {
+          await axios.get(baseURL, {
+            params: {
+              nome: nome,
+              cognome: cognome,
+              email: email
+            }
+        });
     }
 
     

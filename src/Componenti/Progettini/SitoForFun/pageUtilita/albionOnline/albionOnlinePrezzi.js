@@ -75,6 +75,7 @@ function AlbionOnlinePrezzi() {
     '1',
     '2',
     '3',
+    '4',
   ];
 
   const handleChange = (event, categoria) => {

@@ -34,7 +34,6 @@ function SteamHome() {
     const [items, setItems] = React.useState(null);
     const [games, setGames] = React.useState(null);
     const [steamId, setSteamId] = React.useState("");
-    const [showStats, setShowStats] = React.useState(false);
 
 
 
@@ -50,8 +49,12 @@ function SteamHome() {
         // let urlProfilo = "http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=FB401232604477A3C8B1A14958177736&steamids=" + steamId
         // let urlGiochi = "http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=FB401232604477A3C8B1A14958177736&steamid=" + steamId + "&include_appinfo=true&include_played_free_games=true&format=json"
         // https://nodejs-serverless-function-express-emanniti.vercel.app/api/getSteamUser?steamId=76561198079612239
-        let urlProfilo = "https://nodejs-serverless-function-express-chi-ashen.vercel.app/api/getSteamUser";
-        let urlGiochi = "https://nodejs-serverless-function-express-chi-ashen.vercel.app/api/getSteamGames";
+        // let urlProfilo = "https://localhost:3000/api/getSteamUser";
+        // let urlGiochi = "https://localhost:3000/api/getSteamGames";
+        let urlProfilo = "http://localhost:2020/getSteamProfile"
+        let urlGiochi = "http://localhost:2020/getSteamGames"
+        // let urlProfilo = "https://nodejs-serverless-function-express-chi-ashen.vercel.app/api/getSteamUser";
+        // let urlGiochi = "https://nodejs-serverless-function-express-chi-ashen.vercel.app/api/getSteamGames";
 
         await axios.get(urlProfilo, {
             params: {
@@ -67,7 +70,6 @@ function SteamHome() {
             }
         }).then((response) => {
             setGames(response.data.response);
-            setShowStats(true)
         });
 
 
@@ -88,9 +90,9 @@ function SteamHome() {
             <Box sx={{ flexGrow: 1 }}>
                 <AppBar position="static" className={SteamCss.appBarCss}>
                     <Toolbar>
-                        <Button color="inherit"><span style={{ fontWeight: "bold" }}>Login</span></Button>
-                        <Button color="inherit"><span style={{ fontWeight: "bold" }}>Login</span></Button>
-                        <Button color="inherit"><span style={{ fontWeight: "bold" }}>Login</span></Button>
+                    <span style={{ color: "white" }}>Steam ID Lafrasta_: 76561198079612239</span>
+                    <span style={{ color: "white", marginLeft: 100 }}>Steam ID</span>
+                    <span style={{ color: "white", marginLeft: 100 }}>Steam ID</span>
                     </Toolbar>
                 </AppBar>
             </Box>

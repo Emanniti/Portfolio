@@ -11,7 +11,7 @@ import Paper from "@mui/material/Paper";
 import Checkbox from "@mui/material/Checkbox";
 import Test from "../contenitore";
 
-const url = "http://localhost:8080/api/toDoList/getAllToDoList";
+const url = "http://localhost:2020/getAllToDoList";
 
 
 function Todo() {
@@ -27,10 +27,10 @@ function Todo() {
     setPost(post);
     console.log(post)
   };
+
   React.useEffect(() => {
     axios.get(url).then((response) => {
       setPost(response.data);
-      console.log(response.data)
     });
   }, []);
   return (
@@ -50,19 +50,20 @@ function Todo() {
           </TableHead>
           {post != null || undefined ? (
             <TableBody>
-              {post.map((row, id) => (
+              {post.slice(0, -1).map((row, id) => (
                 <TableRow
                   key={row.id}
                   sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                 >
                   <TableCell component="th" scope="row">
-                    {row.nomeToDo}
+                    {row.split('-')[0]}
                   </TableCell>
-                  <TableCell align="left">{row.descrizioneToDo}</TableCell>
+                  <TableCell align="left">{row.split('-')[1]}</TableCell>
                   <TableCell align="left">
                     <Checkbox
-                      checked={post[id].completata === "N" ? false : true}
+                      checked={row.split('-')[2] === "False" ? false : true}
                       onChange={(e) => handleChange(e, row.id - 1)}
+                      disabled={true}
                     />
                   </TableCell>
                 </TableRow>

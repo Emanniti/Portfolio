@@ -14,8 +14,9 @@ import AlbionOnlinePrezzi from './Componenti/Progettini/SitoForFun/pageUtilita/a
 import AlbionOnlineDeaths from './Componenti/Progettini/SitoForFun/pageUtilita/albionOnline/albionOnlineDeaths';
 import AlbionOnlineBuilds from './Componenti/Progettini/SitoForFun/pageUtilita/albionOnline/albionOnlineBuilds';
 import Layout from './Componenti/Progettini/SitoForFun/categorie/home';
-import NoPage from './Componenti/Progettini/SitoForFun/categorie/nopage';
+// import NoPage from './Componenti/Progettini/SitoForFun/categorie/nopage';
 import SteamHome from './Componenti/Progettini/SitoForFun/pageUtilita/Steam/steam';
+import InformazioniSito from './Componenti/Progettini/SitoForFun/categorie/informazioniSito';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/football" element={<FootballHome />} />
         {/* SITO FOR FUN */}
         <Route path="/sitoForFun" element={<Layout />} />
+        <Route path="/informazioniSito" element={<InformazioniSito />} />
         <Route path="/utilita" element={<Utilita />} />
         <Route path="/inserimentoUtente" element={<InserimentoUtente/>} />
         <Route path="/visualizzazioneUtente" element={<VisualizzazioneUtente/>} />

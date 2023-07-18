@@ -30,7 +30,7 @@ function AlbionOnlineDeaths() {
     const [value, setValue] = React.useState('');
 
     function handleFiltra() {
-        let url ="https://cors-anywhere.herokuapp.com/https://murderledger.com/api/players/Lafrasta1/events?skip=0"
+        let url ="https://murderledger.com/api/players/Lafrasta1/info"
           axios.get(url).then((response) => {
               setItems(response.data.events);
           });
