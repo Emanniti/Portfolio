@@ -58,6 +58,12 @@ function Utilita() {
             SERVER LOCALE
           </Link>
         </Fab>
+        <Fab variant="extended">
+          <Link to="/sitoBello" className={HomeCss.bottoniUtilita}>
+            <StorageIcon sx={{ mr: 1 }} />
+            SITO BELLO
+          </Link>
+        </Fab>
       </Stack>
       <Divider textAlign="left" style={{ marginTop: "20px", fontWeight: 'bold', fontSize: 30 }}>ALBION ONLINE</Divider>
       <Stack direction="row" spacing={2} style={{ marginLeft: "200px", marginTop: "10px" }}>

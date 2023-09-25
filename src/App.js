@@ -17,6 +17,8 @@ import Layout from './Componenti/Progettini/SitoForFun/categorie/home';
 // import NoPage from './Componenti/Progettini/SitoForFun/categorie/nopage';
 import SteamHome from './Componenti/Progettini/SitoForFun/pageUtilita/Steam/steam';
 import InformazioniSito from './Componenti/Progettini/SitoForFun/categorie/informazioniSito';
+import SitoBello from './Componenti/Progettini/SitoForFun/pageUtilita/SITO BELLO/sitoBello';
+import HomeFantacalcio from './Componenti/Progettini/Fantacalcio/HomeFantacalcio';
 
 function App() {
   return (
@@ -43,9 +45,13 @@ function App() {
         <Route path="/albionOnlineBuilds" element={<AlbionOnlineBuilds/>} />
          {/* STEAM */}
         <Route path="/steam" element={<SteamHome/>} />
+         {/* SITO BELLO */}
+        <Route path="/sitoBello" element={<SitoBello/>} />
         {/* <Route path="/steam/playerStats" element={<SteamHome/>} />
         <Route path="/steam/" element={<SteamHome/>} />
         <Route path="/steam" element={<SteamHome/>} /> */}
+        {/* FANTACALCIO */}
+        <Route path="/fantacalcio" element={<HomeFantacalcio/>} />
       </Routes>
     </BrowserRouter>
   );

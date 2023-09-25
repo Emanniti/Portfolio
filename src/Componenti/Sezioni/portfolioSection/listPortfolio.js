@@ -61,4 +61,19 @@ export const listPortfolio = [{
     descrizioneInterna: "Sito di calcio per vedere i risultati delle partite",
     immagineInterna: "",
     aperto: false,
-},]
+},
+{
+    titolo: "Fantacalcio",
+    descrizione: "Fantacalcio",
+    immagine: "",
+    altezza: 200,
+    larghezza: 250,
+    progetto: "Project: Sito per informazione di calcio",
+    linguaggi: "Languages: Javascript, node.js, mongoDB",
+    cliente: "Client: Me",
+    prewiew: "fantacalcio",
+    descrizioneInterna: "Sito di calcio per vedere i risultati delle partite",
+    immagineInterna: "",
+    aperto: false,
+},
+]
