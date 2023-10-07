@@ -2,6 +2,7 @@ import { Alert, Button, Card, Grid, Snackbar, TextField } from "@mui/material";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import MainStyle from './Css/mainCss.module.css'
+import FantacalcioHome from "./FantacalcioHome";
 
 function HomeFantacalcio() {
 
@@ -64,26 +65,31 @@ function HomeFantacalcio() {
 
     return (
         <>
-            <Grid container spacing={2} className={MainStyle.mainDiv}>
-                <Grid item xs={1}>
-                    <Card variant="outlined">
-                        <TextField id="filled-basic" label="Username" variant="filled" onChange={(e) => setUsername(e.target.value)} />
-                    </Card>
+            {loginStatus !== 'EFFETTUATO' ?
+                <Grid container spacing={2} className={MainStyle.mainDiv}>
+                    <Grid item xs={1}>
+                        <Card variant="outlined">
+                            <TextField id="filled-basic" label="Username" variant="filled" onChange={(e) => setUsername(e.target.value)} />
+                        </Card>
+                    </Grid>
+                    <Grid item xs={1}>
+                        <Card variant="outlined">
+                            <TextField id="filled-basic" label="Password" variant="filled" onChange={(e) => setPassword(e.target.value)} />
+                        </Card>
+                    </Grid>
+                    <Grid item>
+                        <Card variant="outlined">
+                            <Button variant="contained" onClick={() => handleLogin()}>Login</Button>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={12}>
+                        {handleLoginStatuts()}
+                    </Grid>
                 </Grid>
-                <Grid item xs={1}>
-                    <Card variant="outlined">
-                        <TextField id="filled-basic" label="Password" variant="filled" onChange={(e) => setPassword(e.target.value)} />
-                    </Card>
-                </Grid>
-                <Grid item>
-                    <Card variant="outlined">
-                        <Button variant="contained" onClick={() => handleLogin()}>Login</Button>
-                    </Card>
-                </Grid>
-                <Grid item xs={12}>
-                    {handleLoginStatuts()}
-                </Grid>
-            </Grid>
+                : null}
+            {loginStatus === 'EFFETTUATO' ?
+                <FantacalcioHome />
+                : null}
         </>
     );
 }
